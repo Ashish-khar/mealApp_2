@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <h2>My Favourite Meals</h2>
+            <ul id="favoriteMealsList" class="favorite-meals"></ul>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <!-- Home Page -->
+            <div id="homePage">
+                <h1>Meal App</h1>
+                <input type="text" id="searchInput" placeholder="Search for a meal...">
+                <div id="searchResults" class="search-results"></div>
+            </div>
+
+            <!-- Meal Detail Page -->
+            <div id="mealDetailPage" style="display: none;">
+                <h1>Meal Detail</h1>
+                <div id="mealDetail" class="meal-detail"></div>
+                <a href="#" id="backToHome">Back to Home</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
